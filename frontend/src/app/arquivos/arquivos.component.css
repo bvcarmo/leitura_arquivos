@@ -1,0 +1,14 @@
+#tabelaArquivos {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+td,th {
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}

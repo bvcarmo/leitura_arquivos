@@ -1,0 +1,29 @@
+<h1>Transações</h1>
+
+<table id="tabelaTransacoes" class="table table-hover table-responsive-sm table-responsive-md">
+    <thead>
+      <tr>
+        <th scope="col">Tipo de Registro</th>
+        <th scope="col">Estabelecimento</th>
+        <th scope="col">Data processamento</th>
+        <th scope="col">Período Inicial</th>
+        <th scope="col">Período Final</th>
+        <th scope="col">Sequência</th>
+        <th scope="col">Adquirente</th>
+        <th scope="col">Arquivo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let transacao of transacoes">
+        <th scope="row">{{transacao.tipo_registro}}</th>
+        <td>{{transacao.estabelecimento}}</td>
+        <td>{{transacao.data_processamento}}</td>
+        <td>{{transacao.periodo_inicial}}</td>
+        <td>{{transacao.periodo_final}}</td>
+        <td>{{transacao.sequencia}}</td>
+        <td>{{transacao.adquirente}}</td>
+        <td>{{transacao.arquivo}}</td>
+    </tr>
+    </tbody>
+  </table>
+

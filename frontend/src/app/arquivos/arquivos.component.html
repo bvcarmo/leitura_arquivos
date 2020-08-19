@@ -1,0 +1,19 @@
+<h1>Arquivos</h1>
+
+<table id="tabelaArquivos" class="table table-hover table-responsive-sm table-responsive-md">
+    <thead>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Recepcionado?</th>
+        <th scope="col">Data</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let arquivo of arquivos">
+        <th scope="row">{{arquivo.nome}}</th>
+        <td>{{arquivo.recepcionado}}</td>
+        <td>{{arquivo.data_processamento}}</td>
+    </tr>
+    </tbody>
+  </table>
+
